@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="main-title">Project</h1>
+    <div class="main">
+        <div class="header" id="header">
+            <span class="header__arrow">&#8593</span>
+            <h3 class="header__title">Masquer les controles</h3>
+        </div>
+        <div class="block__panel" id="block__panel">
+            <div class="block__panel-layer" id="layer">
+                <div class="block__panel-header">
+                    <h2 class="block__panel-header-text">Particules</h2>
+                </div>
+                <div class="block__panel-main">
+                    <div class="block__panel-descr">
+                        <p>Pour ajouter des particules, double-cliquer dans le canvas. La particule ajoutee aura les proprietes definies ci-dessous.</p>
+                    </div>
+                    <div class="block__panel-models">
+                        <div class="block__panel-models__option">
+                            <div class="block__panel-models__label">
+                                <label for="myRange">Masse:</label>
+                                <label class="second" for="color">Couleur: </label>
+                            </div>
+                            <div class="block__panel-models__input">
+                                <div>
+                                    <input type="range" min="50" max="500" value="100" class="slider" id="range"><span id="demo"></span>
+                                </div>
+                                <input class="color" type="color" id="color">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="block__panel-button">
+                <input class="res_but" type="button" value="DEMARRER" id="begin">
+                <input class="res_but" type="button" value="Stop" id="stop">
+            </div>
+        </div>
+        <canvas id="affichage" width="800" height="600"></canvas>
+    </div>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
